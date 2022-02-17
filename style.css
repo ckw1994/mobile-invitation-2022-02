@@ -1,8 +1,5 @@
 /* style.css */
-@font-face {
-    font-family: '전주완판본 각B';
-    src: url(./font/전주완판본\ 각B.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 /* css에서 웹 폰트 추가하는 법 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 *{
@@ -20,6 +17,15 @@ ul{
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+section h2{
+    font-family: 'Yeon Sung', cursive;
+    color: #422B73;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 40px;
 }
 
 #title {
@@ -27,10 +33,12 @@ body{
     height: 100vh;
 }
 
+/* 공통 영역 */
+
 /* <!-- 모바일 웹 배경 사진 이나 기타 이미지들을 피그마에서 export 할 때 그냥 export 하지말고 해상도를 2배(2x)이상 선택해서 export해야함 --> */
 header{
     background-color: #74D0EE;
-    background-image: url(./images/title-bg.jpg);
+    background-image: url(./images/);
     background-size: cover;
     /* 
         가변식 비율 (가로 세로 값 구하는 법)    
@@ -44,7 +52,7 @@ header{
 }
 
 header h1{
-    font-family: '전주완판본 각B', 'serif';
+    font-family: 'Yeon Sung', cursive;
     font-size: 20px;
     color: #422B73;
     /* margin-bottom: 13%; */
@@ -94,6 +102,47 @@ header .title-group > img{
 }
 
 /* title */
+
+section .bar{
+    height: 40px;
+    width: 3px;
+    background:#422B73; 
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* outline: 1px solid red; */
+}
+#invitation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #74D0EE;
+    /* outline: 1px solid red; */
+    padding-left: 31px;
+    padding-right: 31px;
+   
+}
+#invitation p{
+    margin-bottom: 1em;
+}
+
+.send-msg-box{
+    /* background: #ccc; */
+    display: flex;
+    margin-top: 49px;
+}
+
+.send-btn{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.send-btn i {
+    margin-right: 10px;
+    /* outline: 1px solid red; */
+}
+
 
 
 
