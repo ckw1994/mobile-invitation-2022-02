@@ -1,0 +1,102 @@
+/* style.css */
+@font-face {
+    font-family: '전주완판본 각B';
+    src: url(./font/전주완판본\ 각B.ttf);
+}
+/* css에서 웹 폰트 추가하는 법 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#title {
+    background: #ccc;
+    height: 100vh;
+}
+
+/* <!-- 모바일 웹 배경 사진 이나 기타 이미지들을 피그마에서 export 할 때 그냥 export 하지말고 해상도를 2배(2x)이상 선택해서 export해야함 --> */
+header{
+    background-color: #74D0EE;
+    background-image: url(./images/title-bg.jpg);
+    background-size: cover;
+    /* 
+        가변식 비율 (가로 세로 값 구하는 법)    
+        높이 값 = 28.90% ( header / title * 100 을 한 값) <- 피그마 레이아웃 명칭임, vh(viewport height) 
+    */
+    height: 29vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1{
+    font-family: '전주완판본 각B', 'serif';
+    font-size: 20px;
+    color: #422B73;
+    /* margin-bottom: 13%; */
+}
+
+header h1 > span {
+    font-size: 30px
+}
+
+header .title-group > img{
+    /* 
+        2배수로 export 해서 이미지 크기가 피그마 css사이즈 보다 2배로 출력되었으니 위드 값을 피그마 크기 값으로 다시 적어주면 이미지 스케일링이 된다 혹은 100%
+    */
+    width: 120px;
+    /* outline: 1px solid red; */
+}
+
+#title .title-photo{
+    height: 54vh;
+    /* outline:1px solid red; */
+}
+
+#title .title-photo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#title .title-footer{
+    background: #fff;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title .title-footer .date{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+#title .title-footer .address{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* title */
+
+
+
+
+
+
