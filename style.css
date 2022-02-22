@@ -1,4 +1,5 @@
 /* style.css */
+/* @import 방식은 일부 모바일 기기에 문제가 있음으로 link방식으로 폰트 추가 추천 */
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 /* css에서 웹 폰트 추가하는 법 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
@@ -38,7 +39,7 @@ section h2{
 /* <!-- 모바일 웹 배경 사진 이나 기타 이미지들을 피그마에서 export 할 때 그냥 export 하지말고 해상도를 2배(2x)이상 선택해서 export해야함 --> */
 header{
     background-color: #74D0EE;
-    background-image: url(./images/);
+    background-image: url(./images/title-bg.jpg);
     background-size: cover;
     /* 
         가변식 비율 (가로 세로 값 구하는 법)    
@@ -128,13 +129,22 @@ section .bar{
     /* background: #ccc; */
     display: flex;
     margin-top: 49px;
+    /* align-items: center; */
+    justify-content: center;
+    /* flex: 1; */
 }
-
-.send-btn{
-    flex: 1;
+.send-msg-box > a{
+    margin-right: 29px;
+}
+.send-msg-box > a:last-child{
+    margin-right: 0px;
+}
+.send-btn {
+    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000;
     
 }
 
@@ -142,6 +152,159 @@ section .bar{
     margin-right: 10px;
     /* outline: 1px solid red; */
 }
+
+/* invitation */
+
+#gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fff;
+}
+
+#gallery > figure {
+    background:#FFF5CE ;
+}
+
+#gallery > figure > .main-photo{
+    padding-top: 20px;
+}  
+
+#gallery > figure > .main-photo > img{  
+    width: 100%;
+    padding-top: 20px 15px;
+    height: 286px;
+    object-fit: cover;
+    display: block;
+    /* outline: 1px solid red; */
+    
+}
+#gallery  figure > .img-list{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    /* outline: 1px solid red; */
+    justify-content:space-between;
+
+}  
+
+#gallery  figure > .img-list > li{
+    width: calc((100% - 30px) / 4);
+    height: 60px;
+}
+
+#gallery  figure > .img-list > li > a >img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* gallery */
+
+
+#location{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #74D0EE;
+}
+
+#map{
+    margin-bottom: 40px;
+}
+
+/* location */
+
+#congrat {
+    padding-top: 40px;
+    /* padding-bottom: 40px; */
+    background: #fff;
+ 
+}
+
+
+.contact-box-wrap > .contact-box:first-child{
+    background: #7A6B9D;
+}
+
+.contact-box-wrap > .contact-box:last-child{
+    background: #74D0EE;
+}
+
+.contact-box >  span {
+    color: #fff;
+}
+
+.contact-box-wrap {
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* justify-content: space-between; */
+  }
+  
+  .contact-box {
+    flex: 1;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    margin: 0px 5px;
+  }
+
+  
+  
+  .icon-box > a:first-child {
+    margin-right: 20px;
+  }
+ 
+
+  .sns-group{
+    padding-top: 35PX;
+    padding-bottom: 35px;
+     background: #74D0EE;
+  }
+  .sns-wrap{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .sns-wrap > a{
+      color: #fff;
+      flex: 1;
+  }
+
+  .sns-wrap > a >img {
+      margin-bottom: 7px;
+  }
+
+  /* 준비화면 */
+  .splash-screen.on{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      background-color: #74D0EE;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+
+  .splash-screen{
+      display: none;
+  }
+
+  .splash-screen > img {
+      width: 140px;
+      height: 140px;
+      
+  }
+
 
 
 

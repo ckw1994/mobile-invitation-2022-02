@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>길동이의 돌잔치에 초대합니다</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sansita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sansita&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -29,8 +33,7 @@
                 <p class="address">김포시 구래동 아스타프라자 6층</p>
             </div>
         </div>
-    </section>
-    <!-- 초대글 영역 -->
+    </section><!-- 타이틀 -->
     <section id="invitation">
         <div class="bar"></div>
         <h2>첫 번째 생일에 <br>
@@ -41,7 +44,7 @@
         </p>
         <p>
             세상의 무엇과도 바꿀 수 없는 조길동. 귀염둥이<br>
-             길동이가 첫 생일을 맞았습니다.
+            길동이가 첫 생일을 맞았습니다.
         </p>
         <p>
             길동이를를 사랑해주신 여러분들을 위해 작<br>
@@ -51,16 +54,112 @@
             바쁘시겠지만 오셔서 꼭 축하해주세요.
         </p>
         <div class="send-msg-box">
-            <div class="send-btn">
-                <i><img src="./images/mother-icon.svg" alt="mother"></i>
-                <span>김현숙</span>
+            <a class="send-btn" href="tel:010-5555-5555">
+                <div class="send-btn">
+                    <i><img src="./images/mother-icon.svg" alt="mother"></i>
+                    <span>김현숙</span>
+                </div>
+            </a>
+            <a class="send-btn" href="tel:010-1234-5678">
+                <div class="send-btn">
+                    <i><img src="./images/father-icon.svg" alt="father"></i>
+                    <span>조황묵</span>
+                </div>
+            </a>
+        </div>
+    </section> <!-- 초대글 영역 -->
+    <section id="gallery">
+        <div class="bar"></div>
+        <h2>포토 갤러리</h2>
+        <figure>
+            <div class="main-photo">
+                <img src="./images/photo-main.jpg" alt="대표이미지">
             </div>
-            <div class="send-btn">
-                <i><img src="./images/father-icon.svg" alt="father"></i>
-                <span>조황묵</span>
+            <ul class="img-list">
+                <li>
+                    <a href="#gallery">
+                        <img src="./images/photo-main.jpg" alt="포토1">
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                        <img src="./images/photo-2.jpg" alt="포토2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                        <img src="./images/photo-3.jpg" alt="포토3">
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                        <img src="./images/photo-4.jpg" alt="포토4">
+                    </a>
+                </li>
+            </ul>
+        </figure>
+    </section> <!-- 갤러리 영역 -->
+    <section id="location">
+        <div class="bar"></div>
+        <h2>오시는 길</h2>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d789.9487839924838!2d126.70310612129867!3d37.63050644746666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c841b1756078d%3A0x5bfaf1bd667bc638!2z6rmA7Y-s7Luo67Kk7IWY7Juo65Sp7ZmA67aA7Y6Y!5e0!3m2!1sko!2skr!4v1645145277785!5m2!1sko!2skr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <p>경기도 김포시 구래동 6883-2 아스타프라자 6층 <br>
+            TEL 080.000.1234</p>
+    </section> <!-- 오시는 길 -->
+    <section id="congrat">
+        <div class="bar"></div>
+        <h2>축하해주기</h2>
+        <div class="contact-box-wrap">
+            <div class="contact-box">
+                <div class="icon-box">
+                    <a href="tel:010-1111-1234">
+                        <img src="./images/phone-icon.svg" alt="phone">
+                    </a>
+                    <a href="sms:010-1111-1234">
+                        <img src="./images/mail-icon.svg" alt="mail">
+                    </a>
+                </div>
+                <span>엄마에게 연락하기</span>
+            </div>
+            <div class="contact-box">
+                <div class="icon-box">
+                    <a href="tel:010-1111-1234">
+                        <img src="./images/phone-icon.svg" alt="phone">
+                    </a>
+                    <a href="sms:010-1111-1234">
+                        <img src="./images/mail-icon.svg" alt="mail">
+                    </a>
+                </div>
+                <span>아빠에게 연락하기</span>
             </div>
         </div>
-    </section>
+
+        <div class="sns-group">
+            <div class="sns-wrap">
+                <a class="icon-link" href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko">
+                    <img src="./images/kakao-icon.svg" alt="kakao">
+                    <div>카카오톡</div>
+                </a>
+                <a class="icon-link" href="https://ko-kr.facebook.com/">
+                    <img src="./images/face-book-icon.svg" alt="facebook">
+                    <div>페이스북</div>
+                </a>
+                <a class="icon-link" href="https://www.youtube.com">
+                    <img src="./images/youtube-icon.svg" alt="youtube">
+                    <div>유튜브</div>
+                </a>
+            </div>
+        </div>
+    </section> <!-- 축하 해주기 -->
+
+    <div class="splash-screen on">
+        <img src="./images/splash-logo.gif" alt="splash-logo">
+    </div>
 </body>
 
 </html>
